@@ -1,0 +1,270 @@
+
+.home-content {
+  --background: #F8F8ED;
+}
+
+
+ion-header ion-toolbar {
+  --background: #173BAF;
+  --color: #ffffff;
+}
+
+ion-header ion-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+.welcome-section {
+  position: relative;
+  margin: 18px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.welcome-section ion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(10, 29, 75, 0.82),
+    rgba(10, 29, 75, 0.15)
+  );
+}
+
+.welcome-overlay h2 {
+  color: #ffffff;
+  font-size: 29px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.welcome-overlay p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+ion-grid {
+  padding: 5px 12px;
+}
+
+ion-col {
+  padding: 6px;
+}
+
+
+.dashboard-card {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(23, 59, 175, 0.08);
+  text-align: center;
+  min-height: 145px;
+}
+
+.dashboard-card ion-card-content {
+  padding: 18px 10px;
+}
+
+.dashboard-card ion-icon {
+  font-size: 28px;
+  color: #173BAF;
+  background: #E8EDF8;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.dashboard-card h2 {
+  color: #173BAF;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+
+.dashboard-card h1 {
+  color: #263C67;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.dashboard-card p {
+  color: #78849C;
+  font-size: 12px;
+  margin: 0;
+}
+
+
+.featured-card {
+  margin: 18px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(23, 59, 175, 0.08);
+}
+
+
+.featured-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 16px 10px;
+}
+
+.featured-header ion-card-title {
+  color: #173BAF;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.featured-header ion-button {
+  --color: #173BAF;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+
+.featured-card ion-card-content {
+  padding: 10px 16px 18px;
+}
+
+
+.room-image {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.room-image ion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.popular-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  background: #173BAF;
+  color: #ffffff;
+
+  padding: 6px 11px;
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.popular-badge ion-icon {
+  font-size: 15px;
+}
+
+
+.room-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.room-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.room-info h1 {
+  color: #173BAF;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.room-info h3 {
+  color: #78849C;
+  font-size: 12px;
+  margin: 0 0 8px;
+}
+
+.room-info h3 ion-icon {
+  color: #E6A52B;
+  vertical-align: middle;
+}
+
+.room-info .room-price {
+  color: #263C67;
+  font-size: 18px;
+  margin: 0;
+}
+
+.room-details .book-button {
+  --background: #173BAF;
+  --background-hover: #102D91;
+  --border-radius: 10px;
+  --box-shadow: none;
+  --color: #ffffff;
+
+  height: 40px;
+  min-width: 105px;
+
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+
+@media (max-width: 576px) {
+
+  .welcome-section {
+    height: 200px;
+  }
+
+  .welcome-overlay h2 {
+    font-size: 24px;
+  }
+
+  .welcome-overlay p {
+    font-size: 12px;
+  }
+
+  .room-image {
+    height: 170px;
+  }
+
+  .room-info h1 {
+    font-size: 16px;
+  }
+
+  .room-details .book-button {
+    min-width: 95px;
+    font-size: 11px;
+  }
+
+}
